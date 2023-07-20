@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Pacientes y Doctores</title>
+</head> <link rel="estilo.css" href="estilo.css">
+
+<body>
+  <h2>Formulario de Doctores</h2>
+  <form id="doctorForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+    <!-- Otras entradas de datos para los doctores -->
+
+    <button type="submit">Guardar Doctor</button>
+  </form>
+
+  <h2>Formulario de Pacientes</h2>
+  <form id="pacienteForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+    <!-- Otras entradas de datos para los pacientes -->
+
+    <button type="submit">Guardar Paciente</button>
+  </form>
+
+  <h2>Formulario de Cita Médica</h2>
+  <form id="citaForm">
+    <label for="pacienteDocumento">Número documento paciente:</label>
+    <input type="text" id="pacienteDocumento" required>
+
+    <label for="especialidad">Especialidad:</label>
+    <select id="especialidad">
+      <option value="medicina_general">Medicina General</option>
+      <option value="cardiologia">Cardiología</option>
+      <!-- Otras opciones de especialidades -->
+    </select>
+
+    <button type="submit">Guardar Cita</button>
+  </form>
+
+  <h2>Doctores Registrados</h2>
+  <ul id="doctoresList"></ul>
+
+  <h2>Pacientes Registrados</h2>
+  <ul id="pacientesList"></ul>
+
+  <h2>Citas Médicas Registradas</h2>
+  <ul id="citasList"></ul>
+
+  <script src="main.js"></script>
+</body>
+</html>
